@@ -1,6 +1,6 @@
 # Angular 2 JSON API
 
-Fork of [angular2-jsonapi](https://github.com/ghidoz/angular2-jsonapi/issues)
+Fork of [angular2-jsonapi](https://github.com/ghidoz/angular2-jsonapi)
 
 A lightweight Angular 2 adapter for [JSON API](http://jsonapi.org/)
 
