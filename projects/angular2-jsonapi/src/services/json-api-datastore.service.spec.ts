@@ -17,9 +17,7 @@ import { getSampleThing } from '../../test/fixtures/thing.fixture';
 import { ModelConfig } from '../interfaces/model-config.interface';
 import { JsonApiQueryData } from '../models/json-api-query-data';
 
-let datastore: Datastore;
-let datastoreWithConfig: DatastoreWithConfig;
-let httpMock: HttpTestingController;
+
 
 // workaround, see https://github.com/angular/angular/pull/8961
 class MockError extends Response implements Error {
@@ -28,6 +26,10 @@ class MockError extends Response implements Error {
 }
 
 describe('JsonApiDatastore', () => {
+  let datastore: Datastore;
+  let datastoreWithConfig: DatastoreWithConfig;
+  let httpMock: HttpTestingController;
+  
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -38,10 +40,9 @@ describe('JsonApiDatastore', () => {
         DatastoreWithConfig,
       ]
     });
-
-    datastore = TestBed.get(Datastore);
-    datastoreWithConfig = TestBed.get(DatastoreWithConfig);
-    httpMock = TestBed.get(HttpTestingController);
+    datastore = TestBed.inject(Datastore);
+    datastoreWithConfig = TestBed.inject(DatastoreWithConfig);
+    httpMock = TestBed.inject(HttpTestingController);
   });
 
   afterEach(() => {
