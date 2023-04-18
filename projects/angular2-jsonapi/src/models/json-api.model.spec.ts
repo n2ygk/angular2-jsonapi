@@ -7,9 +7,8 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { Datastore } from '../../test/datastore.service';
 import { Chapter } from '../../test/models/chapter.model';
 
-let datastore: Datastore;
-
 describe('JsonApiModel', () => {
+  let datastore: Datastore;
 
   beforeEach(() => {
 
@@ -22,7 +21,7 @@ describe('JsonApiModel', () => {
       ]
     });
 
-    datastore = TestBed.get(Datastore);
+    datastore = TestBed.inject(Datastore);
   });
 
   describe('constructor', () => {
