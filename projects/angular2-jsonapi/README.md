@@ -499,7 +499,7 @@ Error handling is done in the `subscribe` method of the returned Observables.
 If your server returns valid [JSON API Error Objects](http://jsonapi.org/format/#error-objects) you can access them in your onError method:
 
 ```typescript
-import {ErrorResponse} from "angular2-jsonapi";
+import {ErrorResponse} from "@michalkotas/angular2-jsonapi";
 
 ...
 

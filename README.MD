@@ -1,13 +1,8 @@
 # Angular 2 JSON API
 
-A lightweight Angular 2 adapter for [JSON API](http://jsonapi.org/)
+Fork of [angular2-jsonapi](https://github.com/ghidoz/angular2-jsonapi/issues)
 
-[![Build Status](https://travis-ci.org/ghidoz/angular2-jsonapi.svg?branch=master)](https://travis-ci.org/ghidoz/angular2-jsonapi)
-[![Coverage Status](https://coveralls.io/repos/github/ghidoz/angular2-jsonapi/badge.svg?branch=master)](https://coveralls.io/github/ghidoz/angular2-jsonapi?branch=master)
-[![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
-[![Dependency Status](https://david-dm.org/ghidoz/angular2-jsonapi.svg)](https://david-dm.org/ghidoz/angular2-jsonapi)
-[![devDependency Status](https://david-dm.org/ghidoz/angular2-jsonapi/dev-status.svg)](https://david-dm.org/ghidoz/angular2-jsonapi#info=devDependencies)
-[![npm version](https://badge.fury.io/js/angular2-jsonapi.svg)](https://badge.fury.io/js/angular2-jsonapi)
+A lightweight Angular 2 adapter for [JSON API](http://jsonapi.org/)
 
 ## Table of Contents
 - [Introduction](#Introduction)
@@ -62,12 +57,12 @@ Moreover, using Angular2 and Typescript, we like to interact with classes and mo
 
 To install this library, run:
 ```bash
-$ npm install angular2-jsonapi --save
+$ npm install @michalkotas/angular2-jsonapi --save
 ```
 
 Add the `JsonApiModule` to your app module imports:
 ```typescript
-import { JsonApiModule } from 'angular2-jsonapi';
+import { JsonApiModule } from '@michalkotas/angular2-jsonapi';
 
 @NgModule({
   imports: [
@@ -115,7 +110,7 @@ Firstly, create your `Datastore` service:
 - Pass the `HttpClient` depencency to the parent constructor.
 
 ```typescript
-import { JsonApiDatastoreConfig, JsonApiDatastore, DatastoreConfig } from 'angular2-jsonapi';
+import { JsonApiDatastoreConfig, JsonApiDatastore, DatastoreConfig } from '@michalkotas/angular2-jsonapi';
 
 const config: DatastoreConfig = {
   baseUrl: 'http://localhost:8000/v1/',
@@ -145,7 +140,7 @@ Then set up your models:
 - (optional) Define your [Metadata](#metadata)
 
 ```typescript
-import { JsonApiModelConfig, JsonApiModel, Attribute, HasMany, BelongsTo } from 'angular2-jsonapi';
+import { JsonApiModelConfig, JsonApiModel, Attribute, HasMany, BelongsTo } from '@michalkotas/angular2-jsonapi';
 
 @JsonApiModelConfig({
     type: 'posts'
@@ -590,4 +585,4 @@ This library is inspired by the draft of [this never implemented library](https:
 
 ## License
 
-MIT © [Daniele Ghidoli](http://danieleghidoli.it)
+MIT
