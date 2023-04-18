@@ -4,11 +4,10 @@
   "description": "A lightweight Angular 2 adapter for JSON API",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ghidoz/angular2-jsonapi"
+    "url": "https://github.com/michalkotas/angular2-jsonapi"
   },
   "author": {
-    "name": "Daniele Ghidoli",
-    "url": "http://danieleghidoli.it"
+    "name": "Michał Kotas"
   },
   "keywords": [
     "angular",
@@ -19,7 +18,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ghidoz/angular2-jsonapi/issues"
+    "url": "https://github.com/michalkotas/angular2-jsonapi"
   },
   "dependencies": {
     "date-fns": "^2.2.1",
