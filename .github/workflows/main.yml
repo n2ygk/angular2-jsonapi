@@ -19,4 +19,5 @@ jobs:
       - run: npm test -- --no-watch --no-progress --code-coverage --browsers=ChromeHeadless
       - uses: coverallsapp/github-action@master
         with:
+          path-to-lcov: coverage/angular2-jsonapi/lcov.info
           github-token: ${{ secrets.GITHUB_TOKEN }}
