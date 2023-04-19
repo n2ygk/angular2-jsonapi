@@ -1,8 +1,13 @@
+[![Version Status](https://img.shields.io/npm/v/@michalkotas/angular2-jsonapi.svg?style=flat&label=version&colorB=4bc524)](https://npmjs.com/package/@michalkotas/angular2-jsonapi)
+[![Build Status](https://github.com/michalkotas/angular2-jsonapi/workflows/Main/badge.svg)](https://github.com/michalkotas/angular2-jsonapi/actions)
+[![Coverage Status](https://coveralls.io/repos/github/michalkotas/angular2-jsonapi/badge.svg?branch=master)](https://coveralls.io/github/michalkotas/angular2-jsonapi?branch=master)
 # Angular 2 JSON API
 
-Fork of [angular2-jsonapi](https://github.com/ghidoz/angular2-jsonapi)
+Fork of the [angular2-jsonapi](https://github.com/ghidoz/angular2-jsonapi) repo. This version is compatible with `Angular 14+`
 
 A lightweight Angular 2 adapter for [JSON API](http://jsonapi.org/)
+
+
 
 ## Table of Contents
 - [Introduction](#Introduction)
