@@ -24,7 +24,7 @@ export class Chapter extends JsonApiModel {
   updated_at: Date;
 
   @BelongsTo()
-  book: Book;
+  book: Book | any;
 
   @BelongsTo()
   firstSection: Section;

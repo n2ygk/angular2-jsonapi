@@ -24,7 +24,8 @@
               "zone.js",
               "zone.js/testing",
               "@abraham/reflection"
-            ]
+            ],
+            "karmaConfig": "projects/angular2-jsonapi/karma.conf.js"
           }
         },
         "lint": {
