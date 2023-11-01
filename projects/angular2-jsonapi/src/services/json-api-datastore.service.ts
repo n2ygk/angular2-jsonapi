@@ -20,7 +20,6 @@ export type ModelType<T extends JsonApiModel> = new(datastore: JsonApiDatastore,
  * TypeScript 2.9.x
  * See https://github.com/Microsoft/TypeScript/issues/24587.
  */
-// tslint:disable-next-line:variable-name
 const AttributeMetadataIndex: string = AttributeMetadata as any;
 
 @Injectable()

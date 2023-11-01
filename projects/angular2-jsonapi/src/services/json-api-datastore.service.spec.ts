@@ -70,7 +70,6 @@ describe('JsonApiDatastore', () => {
       queryRequest.flush({data: []});
     });
 
-    // tslint:disable-next-line:max-line-length
     it('should use apiVersion and modelEnpointUrl from the model instead of datastore if model has apiVersion and/or modelEndpointUrl specified', () => {
       const authorModelConfig: ModelConfig = Reflect.getMetadata('JsonApiModelConfig', CustomAuthor);
       const expectedUrl = `${BASE_URL_FROM_CONFIG}/${AUTHOR_API_VERSION}/${AUTHOR_MODEL_ENDPOINT_URL}`;
@@ -105,7 +104,6 @@ describe('JsonApiDatastore', () => {
         }
       };
 
-      // tslint:disable-next-line:prefer-template
       const expectedUrl = `${BASE_URL}/${API_VERSION}/` + 'authors?' +
         encodeURIComponent('page[size]') + '=10&' +
         encodeURIComponent('page[number]') + '=1&' +

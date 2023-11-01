@@ -252,7 +252,6 @@ describe('JsonApiModel', () => {
         const DATA = getAuthorData(REL, BOOK_NUMBER);
         const INCLUDED = getIncludedBooks(
           BOOK_NUMBER,
-          // tslint:disable-next-line:max-line-length
           'books.chapters,books.firstChapter,books.firstChapter.firstSection,books.firstChapter.firstSection.firstParagraph',
           5
         );
@@ -270,7 +269,6 @@ describe('JsonApiModel', () => {
         const DATA = getAuthorData(REL, BOOK_NUMBER);
         const INCLUDED = getIncludedBooks(
           BOOK_NUMBER,
-          // tslint:disable-next-line:max-line-length
           'books.chapters,books.firstChapter,books.firstChapter.firstSection,books.firstChapter.firstSection.firstParagraph,books.firstChapter.firstSection.firstParagraph.firstSentence',
           5
         );
