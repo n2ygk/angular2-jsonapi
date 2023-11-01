@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { find } from 'lodash-es';
@@ -459,6 +460,7 @@ export class JsonApiDatastore {
       }
     }
 
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     res[AttributeMetadataIndex] = attributesMetadata;
     return res;

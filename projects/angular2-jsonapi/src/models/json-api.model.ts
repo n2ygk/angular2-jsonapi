@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 import { find, includes } from 'lodash-es';
 import { Observable } from 'rxjs';
 import { JsonApiDatastore, ModelType } from '../services/json-api-datastore.service';
